@@ -10,7 +10,7 @@ class LazadaSpiderSpider(scrapy.Spider):
 
     custom_settings = {
         'FEEDS': {'data/%(name)s_%(time)s.csv': {'format': 'csv', }},
-        'PLAYWRIGHT_DEFAULT_NAVIGATION_TIMEOUT': '100000'
+        'PLAYWRIGHT_DEFAULT_NAVIGATION_TIMEOUT': '300000'
     }
 
     def start_requests(self):
